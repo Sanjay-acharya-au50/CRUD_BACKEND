@@ -4,10 +4,10 @@ const router = express.Router();
 
 const PostingSchema = require('../model/postSchema');
 
-// router.get("/", (req,res)=>{
-//     console.log("from router");
-//     res.json("from router")
-// })
+router.get("/", (req,res)=>{
+    console.log("from router");
+    res.json("from router")
+})
 
     router.post("/register", async (req,res)=>{
         // console.log(req.body)
