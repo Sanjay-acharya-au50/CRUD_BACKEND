@@ -1,1 +1,9 @@
 git reset .
+
+
+
+build command = npm install
+
+start command = npm start
+
+inside front end render baseURL & inside cors vercell baseURL
