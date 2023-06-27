@@ -42,7 +42,7 @@ router.get("/", (req,res)=>{
     router.get("/getUser", async (req,res)=>{
         try {
             const getData = await PostingSchema.find();
-            res.status(200).send(getData);
+            res.status(200).json(getData);
             console.log(getData)
         } catch (error) {
             return res.status(404).json(error)
