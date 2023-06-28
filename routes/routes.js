@@ -5,7 +5,7 @@ const router = express.Router();
 const PostingSchema = require('../model/postSchema');
 
 router.get("/", (req,res)=>{
-    console.log("from router");
+    // console.log("from router");
     res.json("from router")
 })
 
@@ -43,7 +43,7 @@ router.get("/", (req,res)=>{
         try {
             const getData = await PostingSchema.find();
             res.status(200).json(getData);
-            console.log(getData)
+            // console.log(getData)
         } catch (error) {
             return res.status(404).json(error)
 
@@ -85,7 +85,7 @@ router.get("/", (req,res)=>{
                 new : true,
             })
             console.log(getUser)
-            res.json(getUser)
+            // res.json(getUser)
         } catch (error) {
             res.json(error)
         }
